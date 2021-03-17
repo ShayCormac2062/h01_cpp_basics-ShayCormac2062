@@ -32,7 +32,8 @@ BookStore::BookStore(const std::string &name) : name_{name} {
     }
 // здесь мог бы быть ваш сотрясающий землю и выделяющий память код ...
     name_ = name;
-    storage_ = new Book[kInitStorageCapacity];
+    storage_capacity_ = kInitStorageCapacity;
+    storage_ = new Book[storage_capacity_];
 
 }
 
